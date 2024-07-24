@@ -4,15 +4,18 @@
 
 ## 使用方法
 
-1. 克隆仓库
+1. 克隆仓库, 并转到项目文件夹
 
     ```bash
-    git clone https://github.com/Stars-sea/admission_map.git
+    $ git clone https://github.com/Stars-sea/admission_map.git
+    $ cd admission_map
     ```
 
-2. 修改`src/assets/json/admissions.json`文件, 如
+2. 使用 `npm i` 安装依赖
 
-    ```json
+3. 修改`src/assets/json/admissions.json`文件, 如
+
+    ```jsonc
     [
         {
             "name": "张三",
@@ -22,13 +25,13 @@
     ]
     ```
 
-3. 再在项目根目录运行
+4. 再在项目根目录运行
 
     ```bash
-    node run dev
+    $ node run dev
     ```
 
-4. 确认无误后用 `node run build` 打包  
+5. 确认无误后用 `node run build` 打包  
    如果不想打包成单网页, 删去 `vite.config.ts` 就行
 
 ## 库 / 资源
