@@ -1,0 +1,46 @@
+@font-face {
+    src: url('./SourceHanSansHWSC-Regular.otf');
+    font-family: 'Source Han Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Source Han Sans' !important;
+}
+
+html {
+    font-size: 10px;
+
+    overflow: hidden;
+}
+
+html::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat;
+}
+
+#info_box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    background-color: rgb(255, 255, 255, 60%);
+    border-radius: 1.5rem;
+
+    box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 10%);
+
+    padding: 8px 12px;
+
+    font-size: 14px;
+}
+
+.info_header {
+    font-size: medium;
+}
